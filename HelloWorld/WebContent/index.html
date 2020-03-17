@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello World</title>
+</head>
+<body>
+	<h1>Hello World</h1>
+	<h3>Static HTML Page</h3>
+	<p>정적 HTML 파일입니다</p>
+	
+	<hr/> <!-- HR : 가로 줄(구획나누기) -->
+	<!--  a : table.html 링크태그 -->
+	<a href="table.html">테이블 연습</a> 
+	
+	<h3>GET 전송</h3>
+	<!-- HelloServlet으로 GET전송 -->
+	<a href="/HelloWorld/hs?name=servlet">HelloServlet 호출</a>
+	
+	<h3>POST 전송</h3>
+	<form action="/HelloWorld/hs" method="POST">
+		<label for="last_name">성</label>
+		<input name="last_name" type="text"><br/>
+		<label for="first_name">이름</label>
+		<input type="text" name="first_name"><br>
+		<input type="reset" value="재작성">
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>
